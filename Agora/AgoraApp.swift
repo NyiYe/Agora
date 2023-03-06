@@ -12,8 +12,8 @@ struct AgoraApp: App {
     var body: some Scene {
         WindowGroup {
 //            AgoraSDKView()
-            ContentView1()
-//            ContentView()
+//            ContentView1()
+            ContentView()
         }
     }
 }
