@@ -11,6 +11,14 @@
 		04C3E97C29B3150400B8B127 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3E97B29B3150400B8B127 /* ContentView.swift */; };
 		04C3E97E29B3150500B8B127 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3E97D29B3150500B8B127 /* Assets.xcassets */; };
 		04C3E98129B3150500B8B127 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3E98029B3150500B8B127 /* Preview Assets.xcassets */; };
+		04C3E98929B3165900B8B127 /* AgoraAppGroupDataHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 04C3E98829B3165900B8B127 /* AgoraAppGroupDataHelper */; };
+		04C3E98B29B3165900B8B127 /* AgoraBroadcastExtensionHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 04C3E98A29B3165900B8B127 /* AgoraBroadcastExtensionHelper */; };
+		04C3E98D29B3165900B8B127 /* AgoraUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04C3E98C29B3165900B8B127 /* AgoraUIKit */; };
+		04C3E98F29B317E700B8B127 /* AgoraViewerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3E98E29B317E700B8B127 /* AgoraViewerHelper.swift */; };
+		04C3E99129B3360300B8B127 /* AgoraSDKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3E99029B3360300B8B127 /* AgoraSDKView.swift */; };
+		04C3E99329B33E7400B8B127 /* AgoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3E99229B33E7400B8B127 /* AgoraViewController.swift */; };
+		04C3E99529B342DE00B8B127 /* Utis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3E99429B342DE00B8B127 /* Utis.swift */; };
+		04C3E99729B3546200B8B127 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C3E99629B3546200B8B127 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,11 @@
 		04C3E97B29B3150400B8B127 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04C3E97D29B3150500B8B127 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C3E98029B3150500B8B127 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04C3E98E29B317E700B8B127 /* AgoraViewerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraViewerHelper.swift; sourceTree = "<group>"; };
+		04C3E99029B3360300B8B127 /* AgoraSDKView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraSDKView.swift; sourceTree = "<group>"; };
+		04C3E99229B33E7400B8B127 /* AgoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraViewController.swift; sourceTree = "<group>"; };
+		04C3E99429B342DE00B8B127 /* Utis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utis.swift; sourceTree = "<group>"; };
+		04C3E99629B3546200B8B127 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C3E98929B3165900B8B127 /* AgoraAppGroupDataHelper in Frameworks */,
+				04C3E98B29B3165900B8B127 /* AgoraBroadcastExtensionHelper in Frameworks */,
+				04C3E98D29B3165900B8B127 /* AgoraUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +71,11 @@
 				04C3E97B29B3150400B8B127 /* ContentView.swift */,
 				04C3E97D29B3150500B8B127 /* Assets.xcassets */,
 				04C3E97F29B3150500B8B127 /* Preview Content */,
+				04C3E98E29B317E700B8B127 /* AgoraViewerHelper.swift */,
+				04C3E99029B3360300B8B127 /* AgoraSDKView.swift */,
+				04C3E99229B33E7400B8B127 /* AgoraViewController.swift */,
+				04C3E99429B342DE00B8B127 /* Utis.swift */,
+				04C3E99629B3546200B8B127 /* MyViewController.swift */,
 			);
 			path = Agora;
 			sourceTree = "<group>";
@@ -83,6 +104,11 @@
 			dependencies = (
 			);
 			name = Agora;
+			packageProductDependencies = (
+				04C3E98829B3165900B8B127 /* AgoraAppGroupDataHelper */,
+				04C3E98A29B3165900B8B127 /* AgoraBroadcastExtensionHelper */,
+				04C3E98C29B3165900B8B127 /* AgoraUIKit */,
+			);
 			productName = Agora;
 			productReference = 04C3E97629B3150400B8B127 /* Agora.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,9 @@
 				Base,
 			);
 			mainGroup = 04C3E96D29B3150400B8B127;
+			packageReferences = (
+				04C3E98729B3165900B8B127 /* XCRemoteSwiftPackageReference "iOS-UIKit" */,
+			);
 			productRefGroup = 04C3E97729B3150400B8B127 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C3E99129B3360300B8B127 /* AgoraSDKView.swift in Sources */,
 				04C3E97C29B3150400B8B127 /* ContentView.swift in Sources */,
 				04C3E97A29B3150400B8B127 /* AgoraApp.swift in Sources */,
+				04C3E99729B3546200B8B127 /* MyViewController.swift in Sources */,
+				04C3E99329B33E7400B8B127 /* AgoraViewController.swift in Sources */,
+				04C3E99529B342DE00B8B127 /* Utis.swift in Sources */,
+				04C3E98F29B317E700B8B127 /* AgoraViewerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +304,8 @@
 				DEVELOPMENT_TEAM = 6V2JYXN7HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use the camera to capture photos and videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app use microphone to record videos and audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +335,8 @@
 				DEVELOPMENT_TEAM = 6V2JYXN7HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app use the camera to capture photos and videos";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app use microphone to record videos and audio";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +377,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04C3E98729B3165900B8B127 /* XCRemoteSwiftPackageReference "iOS-UIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AgoraIO-Community/iOS-UIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04C3E98829B3165900B8B127 /* AgoraAppGroupDataHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04C3E98729B3165900B8B127 /* XCRemoteSwiftPackageReference "iOS-UIKit" */;
+			productName = AgoraAppGroupDataHelper;
+		};
+		04C3E98A29B3165900B8B127 /* AgoraBroadcastExtensionHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04C3E98729B3165900B8B127 /* XCRemoteSwiftPackageReference "iOS-UIKit" */;
+			productName = AgoraBroadcastExtensionHelper;
+		};
+		04C3E98C29B3165900B8B127 /* AgoraUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04C3E98729B3165900B8B127 /* XCRemoteSwiftPackageReference "iOS-UIKit" */;
+			productName = AgoraUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04C3E96E29B3150400B8B127 /* Project object */;
 }

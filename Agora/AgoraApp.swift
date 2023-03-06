@@ -11,7 +11,9 @@ import SwiftUI
 struct AgoraApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            AgoraSDKView()
+            ContentView1()
+//            ContentView()
         }
     }
 }

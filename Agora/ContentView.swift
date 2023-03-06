@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @State var joinedChannel: Bool = false
+
+        var body: some View {
+            ZStack {
+                AgoraViewerHelper.agview
+                if !joinedChannel {
+                    Button("Join Channel") {
+                        self.joinChannel()
+                    }
+                }
+            }
         }
-        .padding()
-    }
+
+        func joinChannel() {
+            self.joinedChannel = true
+            AgoraViewerHelper.agview.join(
+                channel: Utils.CHANNEL_ID, with: Utils.TOKEN,
+                as: .broadcaster
+            )
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
